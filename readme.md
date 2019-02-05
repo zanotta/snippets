@@ -73,6 +73,12 @@ CREATE EVENT event_name
 </IfModule>
 ~~~~ 
 
+#### Forçar HTTPS
+~~~~
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+~~~~ 
+
 ## HTML/CSS
 #### Rodapé Fixo
 ~~~~
@@ -118,4 +124,20 @@ body {
 	
 </body>
 </html>
+~~~~ 
+
+## Git
+#### Alterar repositório remoto
+~~~~
+git remote set-url origin https://github.com/jo-software/elo.git
+~~~~ 
+
+#### Sincronizando branch com master
+~~~~
+git fetch && git rebase origin/master && git push
+~~~~ 
+
+#### Resetando alterações e mantendo código do último commit
+~~~~
+git reset --hard
 ~~~~ 
