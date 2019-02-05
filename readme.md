@@ -141,3 +141,13 @@ git fetch && git rebase origin/master && git push
 ~~~~
 git reset --hard
 ~~~~ 
+
+## Linux
+#### Atualizando pacotes instalados
+~~~~
+apt-get upgrade
+~~~~ 
+#### Removendo pacotes instalados e não utilizados
+~~~~
+apt-get purge
+~~~~ 
