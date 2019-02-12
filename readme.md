@@ -1,4 +1,4 @@
-## Javascript
+## Javascript/Jquery
 #### Ajax
 ~~~~
 $.ajax({
@@ -12,6 +12,11 @@ $.ajax({
         console.log(response);
     }
 });
+~~~~ 
+
+#### Set Timeout
+~~~~
+setTimeout(function(){ alert("Hello"); }, 3000);
 ~~~~ 
 
 ## MySQL
