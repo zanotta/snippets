@@ -84,7 +84,7 @@ RewriteCond %{HTTPS} off
 RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
 ~~~~ 
 
-## HTML/CSS
+## HTML/CSS - Bootstrap
 #### Rodapé Fixo
 ~~~~
 <!DOCTYPE html>
@@ -129,6 +129,13 @@ body {
 	
 </body>
 </html>
+~~~~ 
+
+#### Tabela com texto alinhado verticalmente
+~~~~
+.table > tbody > tr > td {
+  vertical-align: middle;
+}
 ~~~~ 
 
 ## Git
