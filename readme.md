@@ -153,6 +153,11 @@ git remote set-url origin https://github.com/jo-software/elo.git
 git fetch && git rebase origin/master && git push
 ~~~~ 
 
+### Case sensitive
+~~~~
+git config core.ignorecase false
+~~~~
+
 #### Resetando alterações e mantendo código do último commit
 ~~~~
 git reset --hard
