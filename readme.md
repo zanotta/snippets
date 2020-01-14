@@ -142,6 +142,13 @@ body {
 }
 ~~~~ 
 
+#### Texto centralizado verticalmente
+~~~~
+<div class="text-center ml-auto d-flex align-items-center">
+   Texto
+</div>
+~~~~ 
+
 ## Git
 #### Alterar repositório remoto
 ~~~~
