@@ -144,7 +144,7 @@ body {
 
 #### Texto centralizado verticalmente
 ~~~~
-<div class="text-center ml-auto d-flex align-items-center">
+<div class="text-center d-flex align-items-center justify-content-center">
    Texto
 </div>
 ~~~~ 
