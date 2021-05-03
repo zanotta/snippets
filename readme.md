@@ -150,11 +150,6 @@ body {
 ~~~~ 
 
 ## Git
-#### Alterar repositório remoto
-~~~~
-git remote set-url origin https://github.com/jo-software/elo.git
-~~~~ 
-
 #### Sincronizando branch com master
 ~~~~
 git fetch && git rebase origin/master && git push
