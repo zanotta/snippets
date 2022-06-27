@@ -78,7 +78,7 @@ CREATE EVENT event_name
 </IfModule>
 ~~~~ 
 
-#### Forçar HTTPS
+#### Forçar HTTPS e remover www
 ~~~~
 RewriteCond $1 !^(index\.php|images|robots\.txt)
 RewriteCond %{REQUEST_FILENAME} !-f
@@ -86,6 +86,8 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ index.php/$1 [QSA,L]
 RewriteCond %{HTTPS} off
 RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+RewriteRule ^ %{REQUEST_SCHEME}://%1%{REQUEST_URI} [R=301,L]
 ~~~~ 
 
 ## HTML/CSS - Bootstrap
